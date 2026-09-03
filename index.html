@@ -12,8 +12,8 @@
     <!-- Monetag Website Verification Tag -->
     <meta name="monetag" content="5a5e0c5aa83db732c21d3e8d736ff2ce">
 
-    <!-- Google Search Console Verification Tag (Updated) -->
-    <meta name="google-site-verification" content="RgQUIeMlPYGHPM5FwTtn0AZfloVTQryBvygefEs7ng" />
+    <meta name="google-site-verification"
+          content="2Yh9DxrZDIn26KJagZnqxf37ZJi6Q0VtUlasjb2Cpr4" />
 
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
@@ -666,6 +666,58 @@
                 translateY(0);
         }
 
+        /* =========================
+           YOUTUBE SPECIAL BUTTON
+        ========================= */
+
+        .btn-yt {
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 8px;
+
+            width: 100%;
+
+            padding: 15px 20px;
+
+            margin-top: 12px;
+
+            border-radius: 15px;
+
+            color: white;
+
+            font-size: 16px;
+
+            font-weight: 700;
+
+            text-decoration: none;
+
+            background: #ff0000;
+
+            box-shadow:
+                0 8px 20px
+                rgba(
+                    255,
+                    0,
+                    0,
+                    .25
+                );
+
+            transition: .2s;
+        }
+
+
+        .btn-yt:hover {
+
+            background: #cc0000;
+
+            transform: translateY(-2px);
+        }
+
 
         #status {
 
@@ -1099,6 +1151,13 @@
         >
             ⬇ Download Video
         </button>
+
+
+        <!-- YOUTUBE SPECIAL BUTTON -->
+
+        <a href="https://yt-downloader-rt9h.onrender.com/" class="btn-yt" target="_blank">
+            ▶ Download YouTube Video Here
+        </a>
 
 
         <!-- STATUS -->
