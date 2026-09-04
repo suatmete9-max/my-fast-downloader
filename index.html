@@ -3,12 +3,6 @@
 <head>
     <meta charset="UTF-8">
 
-    <!-- Monetag Multitag Script -->
-    <script src="https://quge5.com/88/tag.min.js"
-            data-zone="275857"
-            async
-            data-cfasync="false"></script>
-
     <!-- Monetag Website Verification Tag -->
     <meta name="monetag" content="5a5e0c5aa83db732c21d3e8d736ff2ce">
 
@@ -111,30 +105,67 @@
 
 
         /* =========================
-           ADS
+           4 COMPACT MINI BANNER ADS
         ========================= */
 
-        .ad-section {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            align-items: center;
+        .mini-banner-ad {
             width: 100%;
-            margin-bottom: 16px;
+            max-width: 540px;
+            margin: 8px auto;
+            padding: 9px 14px;
+            border-radius: 12px;
+            background: #ffffff;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e2e8f0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-decoration: none;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
         }
 
-        .ad-container {
-            width: 100%;
-            max-width: 320px;
-            min-height: 50px;
+        .mini-banner-ad:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 16px rgba(0, 0, 0, 0.09);
+        }
 
-            background: transparent;
-
+        .mini-ad-left {
             display: flex;
-            justify-content: center;
             align-items: center;
+            gap: 10px;
+        }
 
-            overflow: hidden;
+        .mini-ad-tag {
+            background: #eef2ff;
+            color: #4f46e5;
+            font-size: 10px;
+            font-weight: 800;
+            padding: 3px 6px;
+            border-radius: 5px;
+            letter-spacing: 0.5px;
+        }
+
+        .mini-ad-details strong {
+            display: block;
+            font-size: 12px;
+            color: #1e293b;
+            line-height: 1.25;
+        }
+
+        .mini-ad-details span {
+            font-size: 10px;
+            color: #64748b;
+        }
+
+        .mini-ad-action {
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            color: #ffffff;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 6px 12px;
+            border-radius: 7px;
+            white-space: nowrap;
         }
 
 
@@ -144,61 +175,39 @@
 
         .box {
             position: relative;
-
             width: 100%;
-
             background: rgba(255,255,255,.97);
-
             padding: 38px 28px 34px;
-
             border-radius: 28px;
-
-            box-shadow:
-                0 18px 50px rgba(30, 50, 80, .12);
-
+            box-shadow: 0 18px 50px rgba(30, 50, 80, .12);
             text-align: center;
-
             overflow: hidden;
-
             border: 1px solid rgba(255,255,255,.9);
         }
 
-
         .box::before {
             content: "";
-
             position: absolute;
-
             width: 180px;
             height: 180px;
-
             border-radius: 50%;
-
             background:
                 linear-gradient(
                     135deg,
                     rgba(255,0,102,.10),
                     rgba(0,120,255,.10)
                 );
-
             top: -90px;
             right: -60px;
         }
 
-
         .box::after {
             content: "";
-
             position: absolute;
-
             width: 130px;
             height: 130px;
-
             border-radius: 50%;
-
-            background:
-                rgba(0, 200, 150, .06);
-
+            background: rgba(0, 200, 150, .06);
             bottom: -70px;
             left: -50px;
         }
@@ -209,27 +218,16 @@
         ========================= */
 
         .new-badge {
-
             position: relative;
-
             display: inline-flex;
-
             align-items: center;
-
             gap: 7px;
-
             padding: 8px 18px;
-
             border-radius: 14px;
-
             color: #fff;
-
             font-size: 15px;
-
             font-weight: 800;
-
             letter-spacing: .4px;
-
             background:
                 linear-gradient(
                     100deg,
@@ -237,56 +235,35 @@
                     #ff006e,
                     #9c27ff
                 );
-
-            box-shadow:
-                0 8px 20px rgba(255, 0, 110, .24);
-
+            box-shadow: 0 8px 20px rgba(255, 0, 110, .24);
             transform: rotate(-2deg);
-
             margin-bottom: 17px;
         }
 
-
         .new-badge::before,
         .new-badge::after {
-
             content: "✦";
-
             position: absolute;
-
             font-size: 13px;
-
-            animation:
-                sparkle 1.8s infinite ease-in-out;
+            animation: sparkle 1.8s infinite ease-in-out;
         }
 
-
         .new-badge::before {
-
             left: -18px;
-
             color: #ff8a00;
         }
 
-
         .new-badge::after {
-
             right: -18px;
-
             color: #7c3aed;
-
             animation-delay: .5s;
         }
 
-
         @keyframes sparkle {
-
-            0%,
-            100% {
+            0%, 100% {
                 transform: scale(.7) rotate(0);
                 opacity: .45;
             }
-
             50% {
                 transform: scale(1.25) rotate(20deg);
                 opacity: 1;
@@ -299,25 +276,13 @@
         ========================= */
 
         h1 {
-
             position: relative;
-
             margin: 0 auto 14px;
-
             max-width: 560px;
-
-            font-size: clamp(
-                34px,
-                8vw,
-                58px
-            );
-
+            font-size: clamp(34px, 8vw, 58px);
             line-height: 1.03;
-
             font-weight: 800;
-
             letter-spacing: -2px;
-
             background:
                 linear-gradient(
                     90deg,
@@ -327,20 +292,10 @@
                     #2455ff 72%,
                     #00a878 100%
                 );
-
             -webkit-background-clip: text;
-
             background-clip: text;
-
             color: transparent;
-
-            text-shadow:
-                0 5px 18px rgba(
-                    65,
-                    80,
-                    150,
-                    .10
-                );
+            text-shadow: 0 5px 18px rgba(65, 80, 150, .10);
         }
 
 
@@ -349,69 +304,19 @@
         ========================= */
 
         .subtitle {
-
             position: relative;
-
             color: #687386;
-
             font-size: 16px;
-
             line-height: 1.65;
-
             margin: 0 auto 22px;
-
             max-width: 520px;
         }
 
-
-        /* =========================
-           PLATFORM COLORS
-        ========================= */
-
-        .platform-text {
-
-            position: relative;
-
-            margin: 0 auto 18px;
-
-            font-size: 17px;
-
-            line-height: 1.75;
-
-            font-weight: 700;
-
-            max-width: 560px;
-        }
-
-
-        .youtube {
-            color: #ff1f1f;
-        }
-
-
-        .instagram {
-            color: #d6249f;
-        }
-
-
-        .tiktok {
-            color: #111827;
-        }
-
-
-        .facebook {
-            color: #1877f2;
-        }
-
-
-        .more {
-            color: #00a651;
-        }
-
-
-        .free {
-            color: #ff6900;
-        }
+        .youtube { color: #ff1f1f; }
+        .instagram { color: #d6249f; }
+        .tiktok { color: #111827; }
+        .facebook { color: #1877f2; }
+        .free { color: #ff6900; }
 
 
         /* =========================
@@ -419,111 +324,44 @@
         ========================= */
 
         .platforms {
-
             position: relative;
-
             display: flex;
-
             justify-content: center;
-
             align-items: center;
-
             gap: 13px;
-
             flex-wrap: wrap;
-
             margin: 6px auto 25px;
-
             padding: 12px 16px;
-
             max-width: 550px;
-
             border-radius: 22px;
-
-            background:
-                linear-gradient(
-                    135deg,
-                    #ffffff,
-                    #f8fafc
-                );
-
-            box-shadow:
-                0 7px 24px rgba(
-                    40,
-                    60,
-                    100,
-                    .09
-                );
-
+            background: linear-gradient(135deg, #ffffff, #f8fafc);
+            box-shadow: 0 7px 24px rgba(40, 60, 100, .09);
             border: 1px solid #eef2f7;
         }
 
-
         .platform-icon {
-
             width: 48px;
-
             height: 48px;
-
             display: flex;
-
             justify-content: center;
-
             align-items: center;
-
             border-radius: 14px;
-
             font-size: 22px;
-
             font-weight: 800;
-
             color: white;
-
-            box-shadow:
-                0 5px 12px rgba(
-                    0,
-                    0,
-                    0,
-                    .12
-                );
+            box-shadow: 0 5px 12px rgba(0, 0, 0, .12);
         }
 
-
-        .yt-icon {
-            background: #ff0000;
-        }
-
-
+        .yt-icon { background: #ff0000; }
         .ig-icon {
-
-            background:
-                linear-gradient(
-                    135deg,
-                    #833ab4,
-                    #fd1d1d,
-                    #fcb045
-                );
+            background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
         }
-
-
-        .tt-icon {
-            background: #111;
-        }
-
-
-        .fb-icon {
-            background: #1877f2;
-        }
-
-
+        .tt-icon { background: #111; }
+        .fb-icon { background: #1877f2; }
         .plus-icon {
-
             background: #f4f1ff;
-
             color: #6537d8;
-
             box-shadow: none;
-
             border: 1px solid #e8e0ff;
         }
 
@@ -532,67 +370,31 @@
            INPUT
         ========================= */
 
-        input,
-        select {
-
+        input, select {
             position: relative;
-
             width: 100%;
-
             padding: 17px 18px;
-
             margin-bottom: 14px;
-
             border: 2px solid #e4e9f0;
-
             border-radius: 15px;
-
             font-size: 15px;
-
             outline: none;
-
-            font-family:
-                'Poppins',
-                sans-serif;
-
+            font-family: 'Poppins', sans-serif;
             background: #fff;
-
             transition: .2s;
         }
 
-
         input {
-
-            box-shadow:
-                0 5px 18px rgba(
-                    40,
-                    60,
-                    100,
-                    .05
-                );
+            box-shadow: 0 5px 18px rgba(40, 60, 100, .05);
         }
 
-
-        input:focus,
-        select:focus {
-
+        input:focus, select:focus {
             border-color: #8b5cf6;
-
-            box-shadow:
-                0 0 0 4px
-                rgba(
-                    139,
-                    92,
-                    246,
-                    .10
-                );
+            box-shadow: 0 0 0 4px rgba(139, 92, 246, .10);
         }
-
 
         select {
-
             cursor: pointer;
-
             background: #f7f9fc;
         }
 
@@ -602,300 +404,130 @@
         ========================= */
 
         .btn-main {
-
             width: 100%;
-
             padding: 17px 20px;
-
             border: none;
-
             border-radius: 15px;
-
             color: white;
-
             font-size: 17px;
-
             cursor: pointer;
-
             font-weight: 700;
-
-            font-family:
-                'Poppins',
-                sans-serif;
-
-            background:
-                linear-gradient(
-                    100deg,
-                    #ff6a00,
-                    #ff006e 45%,
-                    #405cff
-                );
-
-            box-shadow:
-                0 10px 24px
-                rgba(
-                    255,
-                    0,
-                    110,
-                    .22
-                );
-
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(100deg, #ff6a00, #ff006e 45%, #405cff);
+            box-shadow: 0 10px 24px rgba(255, 0, 110, .22);
             transition: .2s;
         }
 
-
         .btn-main:hover {
-
-            transform:
-                translateY(-2px);
-
-            box-shadow:
-                0 14px 30px
-                rgba(
-                    255,
-                    0,
-                    110,
-                    .28
-                );
+            transform: translateY(-2px);
+            box-shadow: 0 14px 30px rgba(255, 0, 110, .28);
         }
-
 
         .btn-main:active {
-
-            transform:
-                translateY(0);
+            transform: translateY(0);
         }
+
 
         /* =========================
            YOUTUBE SPECIAL BUTTON
         ========================= */
 
         .btn-yt {
-
             display: flex;
-
             align-items: center;
-
             justify-content: center;
-
             gap: 8px;
-
             width: 100%;
-
             padding: 15px 20px;
-
             margin-top: 12px;
-
             border-radius: 15px;
-
             color: white;
-
             font-size: 16px;
-
             font-weight: 700;
-
             text-decoration: none;
-
             background: #ff0000;
-
-            box-shadow:
-                0 8px 20px
-                rgba(
-                    255,
-                    0,
-                    0,
-                    .25
-                );
-
+            box-shadow: 0 8px 20px rgba(255, 0, 0, .25);
             transition: .2s;
         }
 
-
         .btn-yt:hover {
-
             background: #cc0000;
-
             transform: translateY(-2px);
         }
 
-
         #status {
-
             margin-top: 16px;
-
             font-size: 13px;
-
             font-weight: 600;
-
             border-radius: 10px;
         }
 
 
         /* =========================
-           NEW SEO SECTION
+           SEO SECTION
         ========================= */
 
         .seo-section {
-
             position: relative;
-
             width: 100%;
-
-            background:
-                rgba(
-                    255,
-                    255,
-                    255,
-                    .97
-                );
-
+            background: rgba(255, 255, 255, .97);
             padding: 30px 25px 26px;
-
             border-radius: 26px;
-
-            box-shadow:
-                0 12px 35px
-                rgba(
-                    30,
-                    50,
-                    80,
-                    .08
-                );
-
+            box-shadow: 0 12px 35px rgba(30, 50, 80, .08);
             margin: 22px 0;
-
             text-align: left;
-
             overflow: hidden;
-
-            border:
-                1px solid
-                rgba(
-                    255,
-                    255,
-                    255,
-                    .9
-                );
+            border: 1px solid rgba(255, 255, 255, .9);
         }
-
-
-        /* NEW LABEL */
 
         .section-new {
-
             display: inline-flex;
-
             align-items: center;
-
             gap: 6px;
-
             padding: 6px 12px;
-
             border-radius: 999px;
-
-            background:
-                linear-gradient(
-                    90deg,
-                    #ec4899,
-                    #8b5cf6
-                );
-
+            background: linear-gradient(90deg, #ec4899, #8b5cf6);
             color: white;
-
             font-size: 11px;
-
             font-weight: 800;
-
             letter-spacing: .6px;
-
             margin-bottom: 10px;
-
-            box-shadow:
-                0 5px 15px
-                rgba(
-                    139,
-                    92,
-                    246,
-                    .18
-                );
+            box-shadow: 0 5px 15px rgba(139, 92, 246, .18);
         }
 
-
         .seo-section h2 {
-
             font-size: 23px;
-
             line-height: 1.25;
-
             margin: 0 0 10px;
-
             font-weight: 800;
-
-            background:
-                linear-gradient(
-                    90deg,
-                    #ff4d00,
-                    #e00087,
-                    #5b35ff,
-                    #0077ff
-                );
-
+            background: linear-gradient(90deg, #ff4d00, #e00087, #5b35ff, #0077ff);
             -webkit-background-clip: text;
-
             background-clip: text;
-
             color: transparent;
         }
 
-
         .seo-section p {
-
             font-size: 13px;
-
             color: #596579;
-
             line-height: 1.75;
-
             margin: 0 0 16px;
         }
 
-
-        /* FEATURES */
-
         .feature-grid {
-
             display: grid;
-
-            grid-template-columns:
-                1fr 1fr;
-
+            grid-template-columns: 1fr 1fr;
             gap: 11px;
-
             margin-top: 15px;
         }
 
-
         .feature-item {
-
-            background:
-                linear-gradient(
-                    135deg,
-                    #f8fafc,
-                    #ffffff
-                );
-
+            background: linear-gradient(135deg, #f8fafc, #ffffff);
             padding: 13px;
-
             border-radius: 13px;
-
             font-size: 12px;
-
             color: #334155;
-
             font-weight: 600;
-
-            border:
-                1px solid #edf1f6;
+            border: 1px solid #edf1f6;
         }
 
 
@@ -904,23 +536,15 @@
         ========================= */
 
         footer {
-
             padding-top: 8px;
-
             color: #7b8798;
-
             font-size: 12px;
-
             text-align: center;
         }
 
-
         footer a {
-
             color: #566274;
-
             text-decoration: none;
-
             font-weight: 600;
         }
 
@@ -930,188 +554,90 @@
         ========================= */
 
         @media (max-width: 520px) {
-
-            body {
-
-                padding:
-                    12px 10px 25px;
-            }
-
-
-            .box {
-
-                padding:
-                    30px 18px 25px;
-
-                border-radius: 23px;
-            }
-
-
-            h1 {
-
-                font-size: 38px;
-            }
-
-
-            .subtitle {
-
-                font-size: 14px;
-            }
-
-
-            .platform-text {
-
-                font-size: 15px;
-            }
-
-
-            .platform-icon {
-
-                width: 43px;
-
-                height: 43px;
-
-                border-radius: 12px;
-            }
-
-
-            .seo-section {
-
-                padding:
-                    25px 18px;
-            }
-
-
-            .seo-section h2 {
-
-                font-size: 20px;
-            }
+            body { padding: 12px 10px 25px; }
+            .box { padding: 30px 18px 25px; border-radius: 23px; }
+            h1 { font-size: 38px; }
+            .subtitle { font-size: 14px; }
+            .platform-icon { width: 43px; height: 43px; border-radius: 12px; }
+            .seo-section { padding: 25px 18px; }
+            .seo-section h2 { font-size: 20px; }
         }
 
-
         @media (max-width: 360px) {
-
-            h1 {
-
-                font-size: 32px;
-            }
-
-
-            .feature-grid {
-
-                grid-template-columns:
-                    1fr;
-            }
+            h1 { font-size: 32px; }
+            .feature-grid { grid-template-columns: 1fr; }
         }
 
     </style>
 </head>
 
-
 <body>
 
 <div class="page">
 
+    <!-- 1. TOP MINI BANNER AD -->
+    <a href="javascript:void(0)" onclick="openDirectLinkAd()" class="mini-banner-ad">
+        <div class="mini-ad-left">
+            <span class="mini-ad-tag">AD</span>
+            <div class="mini-ad-details">
+                <strong>⚡ Ultra Fast 4K Downloader</strong>
+                <span>High Speed Server • 100% Free</span>
+            </div>
+        </div>
+        <div class="mini-ad-action">Install Free</div>
+    </a>
+
+    <!-- 2. TOP MINI BANNER AD -->
+    <a href="javascript:void(0)" onclick="openDirectLinkAd()" class="mini-banner-ad">
+        <div class="mini-ad-left">
+            <span class="mini-ad-tag" style="background:#fef3c7; color:#b45309;">HOT</span>
+            <div class="mini-ad-details">
+                <strong>📥 Turbo MP4 Video Converter</strong>
+                <span>1-Click Fast Save • No Limits</span>
+            </div>
+        </div>
+        <div class="mini-ad-action" style="background: linear-gradient(135deg, #7c3aed, #6d28d9);">Start Now</div>
+    </a>
+
 
     <!-- =========================
-         TOP AD
-    ========================= -->
-
-    <div class="ad-section">
-
-        <div class="ad-container"></div>
-
-    </div>
-
-
-    <!-- =========================
-         MAIN DOWNLOADER
+         MAIN DOWNLOADER CARD
     ========================= -->
 
     <div class="box">
 
-
         <!-- NEW BADGE -->
-
         <div class="new-badge">
             ⭐ NEW
         </div>
 
-
         <!-- MAIN TITLE -->
-
         <h1>
             All-in-One<br>
             Video Downloader
         </h1>
 
-
         <!-- MULTICOLOR DESCRIPTION -->
-
         <p class="subtitle">
-
             Download videos from
-
-            <span class="youtube">
-                YouTube
-            </span>,
-
-            <span class="instagram">
-                Instagram
-            </span>,
-
-            <span class="tiktok">
-                TikTok
-            </span>,
-
-            <span class="facebook">
-                Facebook
-            </span>
-
+            <span class="youtube">YouTube</span>,
+            <span class="instagram">Instagram</span>,
+            <span class="tiktok">TikTok</span>,
+            <span class="facebook">Facebook</span>
             &amp; more —
-
-            <span class="free">
-                Free Online!
-            </span>
-
+            <span class="free">Free Online!</span>
         </p>
 
-
         <!-- PLATFORM ICONS -->
-
         <div class="platforms">
-
-
-            <div class="platform-icon yt-icon">
-                ▶
-            </div>
-
-
-            <div class="platform-icon ig-icon">
-                ◎
-            </div>
-
-
-            <div class="platform-icon tt-icon">
-                ♪
-            </div>
-
-
-            <div class="platform-icon fb-icon">
-                f
-            </div>
-
-
-            <div class="platform-icon plus-icon">
-                ＋
-            </div>
-
-
+            <div class="platform-icon yt-icon">▶</div>
+            <div class="platform-icon ig-icon">◎</div>
+            <div class="platform-icon tt-icon">♪</div>
+            <div class="platform-icon fb-icon">f</div>
+            <div class="platform-icon plus-icon">＋</div>
         </div>
 
-
-        <!-- VIDEO URL -->
-
+        <!-- VIDEO URL INPUT (Clean & Safe) -->
         <input
             type="text"
             id="userInput"
@@ -1119,67 +645,41 @@
             autocomplete="off"
         >
 
-
-        <!-- QUALITY -->
-
+        <!-- QUALITY SELECT -->
         <select id="qualitySelect">
-
-            <option value="720">
-                High Definition (720p HD)
-            </option>
-
-            <option value="480">
-                Standard Quality (480p)
-            </option>
-
-            <option value="360" selected>
-                Fast / Data Saver (360p)
-            </option>
-
-            <option value="240">
-                Low Quality (240p)
-            </option>
-
+            <option value="720">High Definition (720p HD)</option>
+            <option value="480">Standard Quality (480p)</option>
+            <option value="360" selected>Fast / Data Saver (360p)</option>
+            <option value="240">Low Quality (240p)</option>
         </select>
 
-
-        <!-- DOWNLOAD -->
-
-        <button
-            class="btn-main"
-            onclick="fetchVideo()"
-        >
+        <!-- DOWNLOAD BUTTON -->
+        <button class="btn-main" onclick="fetchVideo()">
             ⬇ Download Video
         </button>
 
-
-        <!-- YOUTUBE SPECIAL BUTTON -->
-
+        <!-- YOUTUBE SPECIAL BUTTON (Clean & Safe) -->
         <a href="https://yt-downloader-rt9h.onrender.com/" class="btn-yt" target="_blank">
             ▶ Download YouTube Video Here
         </a>
 
-
         <!-- STATUS -->
-
         <div id="status"></div>
 
-
     </div>
 
 
-    <!-- =========================
-         BOTTOM AD
-    ========================= -->
-
-    <div
-        class="ad-section"
-        style="margin-top:18px;"
-    >
-
-        <div class="ad-container"></div>
-
-    </div>
+    <!-- 3. BOTTOM MINI BANNER AD -->
+    <a href="javascript:void(0)" onclick="openDirectLinkAd()" class="mini-banner-ad" style="margin-top: 18px;">
+        <div class="mini-ad-left">
+            <span class="mini-ad-tag" style="background:#ecfdf5; color:#047857;">SAFE</span>
+            <div class="mini-ad-details">
+                <strong>🛡️ Secure Cloud Storage</strong>
+                <span>Save Unlimited Media Online</span>
+            </div>
+        </div>
+        <div class="mini-ad-action" style="background: linear-gradient(135deg, #059669, #047857);">Get Free</div>
+    </a>
 
 
     <!-- =========================
@@ -1188,56 +688,39 @@
 
     <div class="seo-section">
 
-
         <div class="section-new">
             ✨ NEW &amp; IMPROVED
         </div>
 
-
-        <h2>
-            Free Unlimited Online Video Downloader
-        </h2>
-
+        <h2>Free Unlimited Online Video Downloader</h2>
 
         <p>
-
-            Save videos directly to your PC,
-            iPhone, iPad or Android phone.
-            Our fast online downloader supports
-            popular social platforms and makes
-            saving your favorite videos simple
-            and convenient.
-
+            Save videos directly to your PC, iPhone, iPad or Android phone.
+            Our fast online downloader supports popular social platforms and makes
+            saving your favorite videos simple and convenient.
         </p>
 
-
         <div class="feature-grid">
-
-
-            <div class="feature-item">
-                ⚡ 100% Free &amp; Unlimited
-            </div>
-
-
-            <div class="feature-item">
-                📱 Mobile &amp; iOS Friendly
-            </div>
-
-
-            <div class="feature-item">
-                🎬 Multi-Platform Supported
-            </div>
-
-
-            <div class="feature-item">
-                🔒 Fast &amp; Secure
-            </div>
-
-
+            <div class="feature-item">⚡ 100% Free &amp; Unlimited</div>
+            <div class="feature-item">📱 Mobile &amp; iOS Friendly</div>
+            <div class="feature-item">🎬 Multi-Platform Supported</div>
+            <div class="feature-item">🔒 Fast &amp; Secure</div>
         </div>
 
-
     </div>
+
+
+    <!-- 4. BOTTOM MINI BANNER AD -->
+    <a href="javascript:void(0)" onclick="openDirectLinkAd()" class="mini-banner-ad" style="margin-top: 18px;">
+        <div class="mini-ad-left">
+            <span class="mini-ad-tag" style="background:#fdf2f8; color:#be185d;">PRO</span>
+            <div class="mini-ad-details">
+                <strong>🚀 HD Audio & Video Player</strong>
+                <span>Play All Formats Smoothly</span>
+            </div>
+        </div>
+        <div class="mini-ad-action" style="background: linear-gradient(135deg, #db2777, #be185d);">Download</div>
+    </a>
 
 
     <!-- =========================
@@ -1245,93 +728,102 @@
     ========================= -->
 
     <footer>
-
-        <p>
-            &copy; 2026 All-in-One Downloader
-        </p>
-
+        <p>&copy; 2026 All-in-One Downloader</p>
     </footer>
-
 
 </div>
 
 
 <!-- =========================
-     DOWNLOAD LOGIC
+     AD TIMERS & DOWNLOAD LOGIC
 ========================= -->
 
 <script>
+// Monetag Direct Link (Aap apna link yahan paste kar sakte hain)
+const MONETAG_DIRECT_LINK = ""; 
 
-    function fetchVideo() {
+function openDirectLinkAd() {
+    if (MONETAG_DIRECT_LINK) {
+        window.open(MONETAG_DIRECT_LINK, '_blank');
+    } else {
+        triggerInstantAd(true);
+    }
+}
 
-        const inputLink =
-            document
-                .getElementById('userInput')
-                .value
-                .trim();
+// 1. Instant High-Earning Ad: Har 2 Minute (120,000 ms)
+const INSTANT_AD_INTERVAL = 2 * 60 * 1000; 
 
+// 2. Video Reward / High-CPM Video Ad: Har 3 Minute (180,000 ms)
+const VIDEO_REWARD_INTERVAL = 3 * 60 * 1000; 
 
-        const quality =
-            document
-                .getElementById('qualitySelect')
-                .value;
+function triggerInstantAd(force = false) {
+    const lastAd = localStorage.getItem('site2_instant_ad');
+    const now = Date.now();
 
-
-        const statusDiv =
-            document
-                .getElementById('status');
-
-
-        /* VALIDATION */
-
-        if (
-            !inputLink ||
-            (
-                !inputLink.includes("http://") &&
-                !inputLink.includes("https://")
-            )
-        ) {
-
-            statusDiv.innerHTML =
-                "<div style='background:#fee2e2;color:#dc2626;padding:12px;border-radius:10px;'>Please enter a valid video link!</div>";
-
-            return;
+    if (force || !lastAd || (now - parseInt(lastAd, 10)) >= INSTANT_AD_INTERVAL) {
+        if (!force) {
+            localStorage.setItem('site2_instant_ad', now);
         }
 
+        // Monetag Zone 275857 Script Execution
+        const s = document.createElement('script');
+        s.src = "https://quge5.com/88/tag.min.js";
+        s.dataset.zone = "275857";
+        s.async = true;
+        s.setAttribute("data-cfasync", "false");
+        document.body.appendChild(s);
+    }
+}
 
-        /* PROCESSING */
+function triggerVideoRewardAd() {
+    const lastVideoAd = localStorage.getItem('site2_reward_ad');
+    const now = Date.now();
 
-        statusDiv.innerHTML =
-            "<div style='background:#fef3c7;color:#d97706;padding:12px;border-radius:10px;'>Processing stream... ⏳</div>";
+    if (!lastVideoAd || (now - parseInt(lastVideoAd, 10)) >= VIDEO_REWARD_INTERVAL) {
+        localStorage.setItem('site2_reward_ad', now);
 
+        // Monetag High-CPM Video Trigger (Zone 275857)
+        const v = document.createElement('script');
+        v.src = "https://quge5.com/88/tag.min.js";
+        v.dataset.zone = "275857";
+        v.async = true;
+        v.setAttribute("data-cfasync", "false");
+        document.body.appendChild(v);
+    }
+}
 
-        /* BACKEND URL */
+function fetchVideo() {
+    const inputLink = document.getElementById('userInput').value.trim();
+    const quality = document.getElementById('qualitySelect').value;
+    const statusDiv = document.getElementById('status');
 
-        const backendUrl =
-            `/download?url=${
-                encodeURIComponent(inputLink)
-            }&quality=${quality}`;
-
-
-        /* START DOWNLOAD */
-
-        window.location.href =
-            backendUrl;
-
-
-        /* STATUS MESSAGE */
-
-        setTimeout(() => {
-
-            statusDiv.innerHTML =
-                "<div style='background:#d1fae5;color:#059669;padding:12px;border-radius:10px;'>✅ Download Starting. Check downloads!</div>";
-
-        }, 5000);
-
+    /* VALIDATION */
+    if (!inputLink || (!inputLink.includes("http://") && !inputLink.includes("https://"))) {
+        statusDiv.innerHTML = "<div style='background:#fee2e2;color:#dc2626;padding:12px;border-radius:10px;'>Please enter a valid video link!</div>";
+        return;
     }
 
-</script>
+    /* PROCESSING */
+    statusDiv.innerHTML = "<div style='background:#fef3c7;color:#d97706;padding:12px;border-radius:10px;'>Processing stream... ⏳</div>";
 
+    // 1st Download par instant ad trigger aur har 2 minute ke interval par agla ad
+    triggerInstantAd();
+
+    // Har 3 minute ke gap par high-CPM video ad trigger
+    triggerVideoRewardAd();
+
+    /* BACKEND URL */
+    const backendUrl = `/download?url=${encodeURIComponent(inputLink)}&quality=${quality}`;
+
+    /* START DOWNLOAD */
+    window.location.href = backendUrl;
+
+    /* STATUS MESSAGE */
+    setTimeout(() => {
+        statusDiv.innerHTML = "<div style='background:#d1fae5;color:#059669;padding:12px;border-radius:10px;'>✅ Download Starting. Check downloads!</div>";
+    }, 5000);
+}
+</script>
 
 </body>
 </html>
