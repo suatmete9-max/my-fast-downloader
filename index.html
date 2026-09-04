@@ -4,7 +4,6 @@
 
     <meta charset="UTF-8">
 
-
     <!-- ==========================================
          TIER-1 GEOTARGETING (USA, UK, CANADA)
     ========================================== -->
@@ -28,7 +27,6 @@
     <link rel="canonical"
           href="https://my-fast-downloader-7z8r.onrender.com/" />
 
-
     <!-- ==========================================
          MONETAG VERIFICATION TAG
     ========================================== -->
@@ -41,7 +39,6 @@
 
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
-
 
     <!-- ==========================================
          USA / TIER-1 HIGH CPC SEO METAS
@@ -61,7 +58,6 @@
     <meta name="robots"
           content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
-
     <!-- ==========================================
          OPEN GRAPH TAGS
     ========================================== -->
@@ -77,7 +73,6 @@
 
     <meta property="og:description"
           content="Save videos from Instagram, TikTok, Facebook in 1-click directly to your device.">
-
 
     <!-- ==========================================
          STRUCTURED DATA & FAQ RICH SNIPPET
@@ -125,14 +120,12 @@
     }
     </script>
 
-
     <!-- ==========================================
          GOOGLE FONT
     ========================================== -->
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
           rel="stylesheet">
-
 
     <!-- ==========================================
          CSS STYLING
@@ -145,783 +138,377 @@
         ========================= */
 
         * {
-
             box-sizing: border-box;
-
         }
-
 
         body {
-
             font-family: 'Poppins', sans-serif;
-
             margin: 0;
-
             min-height: 100vh;
-
             padding: 16px 14px 30px;
-
-
             background:
-
                 radial-gradient(
-
                     circle at 10% 10%,
-
                     rgba(255, 0, 128, .08),
-
                     transparent 25%
-
                 ),
-
                 radial-gradient(
-
                     circle at 90% 20%,
-
                     rgba(0, 140, 255, .10),
-
                     transparent 28%
-
                 ),
-
                 linear-gradient(
-
                     135deg,
-
                     #f8fafc 0%,
-
                     #e8eef8 100%
-
                 );
-
-
             color: #18202f;
-
         }
-
 
         .page {
-
             width: 100%;
-
             max-width: 620px;
-
             margin: 0 auto;
-
             display: flex;
-
             flex-direction: column;
-
             gap: 12px;
-
         }
-
-
 
         /* =========================
            MINI BANNER ADS STYLES
         ========================= */
 
         .mini-banner-ad {
-
             width: 100%;
-
             padding: 10px 14px;
-
             border-radius: 12px;
-
             background: #ffffff;
-
             box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
-
             border: 1px solid #e2e8f0;
-
             display: flex;
-
             align-items: center;
-
             justify-content: space-between;
-
             text-decoration: none;
-
             cursor: pointer;
-
             transition: transform 0.2s, box-shadow 0.2s;
-
         }
-
 
         .mini-banner-ad:hover {
-
             transform: translateY(-2px);
-
             box-shadow: 0 5px 16px rgba(0, 0, 0, 0.09);
-
         }
-
 
         .mini-ad-left {
-
             display: flex;
-
             align-items: center;
-
             gap: 10px;
-
         }
-
 
         .mini-ad-tag {
-
             background: #eef2ff;
-
             color: #4f46e5;
-
             font-size: 10px;
-
             font-weight: 800;
-
             padding: 3px 6px;
-
             border-radius: 5px;
-
             letter-spacing: 0.5px;
-
         }
-
 
         .mini-ad-details strong {
-
             display: block;
-
             font-size: 12px;
-
             color: #1e293b;
-
             line-height: 1.25;
-
         }
-
 
         .mini-ad-details span {
-
             font-size: 10px;
-
             color: #64748b;
-
         }
-
 
         .mini-ad-action {
-
             background: linear-gradient(135deg, #2563eb, #1d4ed8);
-
             color: #ffffff;
-
             font-size: 11px;
-
             font-weight: 700;
-
             padding: 6px 12px;
-
             border-radius: 7px;
-
             white-space: nowrap;
-
         }
-
-
 
         /* =========================
            MAIN CARD DESIGN
         ========================= */
 
         .box {
-
             position: relative;
-
             width: 100%;
-
             background: rgba(255, 255, 255, .98);
-
             padding: 34px 24px 28px;
-
             border-radius: 26px;
-
             box-shadow: 0 16px 45px rgba(30, 50, 80, .10);
-
             text-align: center;
-
             border: 1px solid rgba(255, 255, 255, .9);
-
             overflow: hidden;
-
         }
-
 
         .box::before {
-
             content: "";
-
             position: absolute;
-
             width: 180px;
-
             height: 180px;
-
             border-radius: 50%;
-
             background:
-
                 linear-gradient(
-
                     135deg,
-
                     rgba(255,0,102,.10),
-
                     rgba(0,120,255,.10)
-
                 );
-
             top: -90px;
-
             right: -60px;
-
         }
-
 
         .box::after {
-
             content: "";
-
             position: absolute;
-
             width: 130px;
-
             height: 130px;
-
             border-radius: 50%;
-
             background: rgba(0, 200, 150, .06);
-
             bottom: -70px;
-
             left: -50px;
-
         }
-
 
         .new-badge {
-
             position: relative;
-
             display: inline-flex;
-
             align-items: center;
-
             gap: 6px;
-
             padding: 7px 16px;
-
             border-radius: 12px;
-
             color: #fff;
-
             font-size: 14px;
-
             font-weight: 800;
-
             background:
-
                 linear-gradient(
-
                     100deg,
-
                     #ff9d00,
-
                     #ff006e,
-
                     #9c27ff
-
                 );
-
             box-shadow: 0 6px 16px rgba(255, 0, 110, .22);
-
             margin-bottom: 14px;
-
         }
-
 
         h1 {
-
             position: relative;
-
             margin: 0 auto 12px;
-
             font-size: clamp(32px, 7vw, 50px);
-
             line-height: 1.05;
-
             font-weight: 800;
-
             letter-spacing: -1.5px;
-
             background:
-
                 linear-gradient(
-
                     90deg,
-
                     #ff3d00,
-
                     #ff006e 25%,
-
                     #9c27ff 50%,
-
                     #2455ff 75%,
-
                     #00a878 100%
-
                 );
-
             -webkit-background-clip: text;
-
             background-clip: text;
-
             color: transparent;
-
         }
-
 
         .subtitle {
-
             position: relative;
-
             color: #687386;
-
             font-size: 15px;
-
             line-height: 1.6;
-
             margin: 0 auto 18px;
-
         }
 
-
-        .youtube {
-
-            color: #ff1f1f;
-
-        }
-
-
-        .instagram {
-
-            color: #d6249f;
-
-        }
-
-
-        .tiktok {
-
-            color: #111827;
-
-        }
-
-
-        .facebook {
-
-            color: #1877f2;
-
-        }
-
-
-        .free {
-
-            color: #ff6900;
-
-        }
-
-
+        .youtube { color: #ff1f1f; }
+        .instagram { color: #d6249f; }
+        .tiktok { color: #111827; }
+        .facebook { color: #1877f2; }
+        .free { color: #ff6900; }
 
         /* =========================
            PLATFORM ICONS
         ========================= */
 
         .platforms {
-
             position: relative;
-
             display: flex;
-
             justify-content: center;
-
             align-items: center;
-
             gap: 12px;
-
             flex-wrap: wrap;
-
             margin: 0 auto 20px;
-
             padding: 10px 14px;
-
             border-radius: 18px;
-
             background: #ffffff;
-
             box-shadow: 0 6px 20px rgba(40, 60, 100, .08);
-
             border: 1px solid #eef2f7;
-
         }
-
 
         .platform-icon {
-
             width: 44px;
-
             height: 44px;
-
             display: flex;
-
             justify-content: center;
-
             align-items: center;
-
             border-radius: 12px;
-
             font-size: 20px;
-
             font-weight: 800;
-
             color: white;
-
         }
 
-
-        .yt-icon {
-
-            background: #ff0000;
-
-        }
-
-
-        .ig-icon {
-
-            background:
-
-                linear-gradient(
-
-                    135deg,
-
-                    #833ab4,
-
-                    #fd1d1d,
-
-                    #fcb045
-
-                );
-
-        }
-
-
-        .tt-icon {
-
-            background: #111;
-
-        }
-
-
-        .fb-icon {
-
-            background: #1877f2;
-
-        }
-
-
-        .plus-icon {
-
-            background: #f4f1ff;
-
-            color: #6537d8;
-
-        }
-
-
+        .yt-icon { background: #ff0000; }
+        .ig-icon { background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045); }
+        .tt-icon { background: #111; }
+        .fb-icon { background: #1877f2; }
+        .plus-icon { background: #f4f1ff; color: #6537d8; }
 
         /* =========================
            INPUT FIELDS & SELECT
         ========================= */
 
         input,
-
         select {
-
             position: relative;
-
             width: 100%;
-
             padding: 16px 18px;
-
             margin-bottom: 12px;
-
             border: 2px solid #e4e9f0;
-
             border-radius: 14px;
-
             font-size: 15px;
-
             outline: none;
-
             font-family: 'Poppins', sans-serif;
-
             background: #fff;
-
             transition: .2s;
-
         }
-
 
         input:focus,
-
         select:focus {
-
             border-color: #8b5cf6;
-
             box-shadow:
-
                 0 0 0 4px
-
                 rgba(
-
                     139,
-
                     92,
-
                     246,
-
                     .10
-
                 );
-
         }
-
 
         select {
-
             cursor: pointer;
-
             background: #f7f9fc;
-
         }
-
-
 
         /* =========================
            BUTTONS
         ========================= */
 
         .btn-main {
-
             width: 100%;
-
             padding: 16px 20px;
-
             border: none;
-
             border-radius: 14px;
-
             color: white;
-
             font-size: 17px;
-
             cursor: pointer;
-
             font-weight: 700;
-
             font-family: 'Poppins', sans-serif;
-
             background:
-
                 linear-gradient(
-
                     100deg,
-
                     #ff6a00,
-
                     #ff006e 45%,
-
                     #405cff
-
                 );
-
             box-shadow: 0 8px 20px rgba(255, 0, 110, .22);
-
             transition: .2s;
-
         }
-
 
         .btn-main:hover {
-
             transform: translateY(-2px);
-
         }
-
 
         .btn-yt {
-
             display: flex;
-
             align-items: center;
-
             justify-content: center;
-
             gap: 8px;
-
             width: 100%;
-
             padding: 14px 20px;
-
             margin-top: 10px;
-
             border-radius: 14px;
-
             color: white;
-
             font-size: 15px;
-
             font-weight: 700;
-
             text-decoration: none;
-
             background: #ff0000;
-
             box-shadow: 0 6px 18px rgba(255, 0, 0, .22);
-
             transition: .2s;
-
         }
-
 
         .btn-yt:hover {
-
             transform: translateY(-2px);
-
         }
-
 
         #status {
-
             margin-top: 14px;
-
             font-size: 13px;
-
             font-weight: 600;
-
         }
-
-
 
         /* =========================
            SEO SECTION
         ========================= */
 
         .seo-section {
-
             background: #ffffff;
-
             border-radius: 22px;
-
             padding: 22px 18px;
-
             box-shadow: 0 8px 25px rgba(40, 55, 100, .06);
-
             border: 1px solid #eef2f7;
-
             text-align: left;
-
         }
-
 
         .seo-section h2 {
-
             margin: 0 0 8px;
-
             font-size: 18px;
-
             font-weight: 800;
-
             color: #1e293b;
-
         }
-
 
         .seo-section p {
-
             margin: 0;
-
             color: #64748b;
-
             font-size: 13px;
-
             line-height: 1.65;
-
         }
-
 
         footer {
-
             color: #7b8798;
-
             font-size: 12px;
-
             text-align: center;
-
             padding-top: 5px;
-
         }
-
-
 
         /* =========================
            RESPONSIVE MOBILE
         ========================= */
 
         @media (max-width: 520px) {
-
-            body {
-
-                padding: 12px 10px 20px;
-
-            }
-
-
-            .box {
-
-                padding: 26px 16px 20px;
-
-                border-radius: 20px;
-
-            }
-
-
-            h1 {
-
-                font-size: 34px;
-
-            }
-
-
-            .platform-icon {
-
-                width: 40px;
-
-                height: 40px;
-
-            }
-
+            body { padding: 12px 10px 20px; }
+            .box { padding: 26px 16px 20px; border-radius: 20px; }
+            h1 { font-size: 34px; }
+            .platform-icon { width: 40px; height: 40px; }
         }
 
     </style>
@@ -932,122 +519,61 @@
 
 <div class="page">
 
-
-    <!-- =========================================================
-         BANNER AD 1 (TOP) - MONETAG DIRECT LINK
-    ========================================================= -->
-
+    <!-- BANNER AD 1 (TOP) -->
     <a href="javascript:void(0)"
        onclick="openDirectLinkAd()"
        class="mini-banner-ad">
-
         <div class="mini-ad-left">
-
             <span class="mini-ad-tag">AD</span>
-
             <div class="mini-ad-details">
-
                 <strong>⚡ Ultra Fast 4K Downloader</strong>
-
                 <span>High Speed Server • 100% Free</span>
-
             </div>
-
         </div>
-
         <div class="mini-ad-action">Install Free</div>
-
     </a>
 
-
-
-    <!-- =========================================================
-         BANNER AD 2 (TOP) - MONETAG DIRECT LINK
-    ========================================================= -->
-
+    <!-- BANNER AD 2 (TOP) -->
     <a href="javascript:void(0)"
        onclick="openDirectLinkAd()"
        class="mini-banner-ad">
-
         <div class="mini-ad-left">
-
-            <span class="mini-ad-tag"
-                  style="background:#fef3c7; color:#b45309;">
-                HOT
-            </span>
-
+            <span class="mini-ad-tag" style="background:#fef3c7; color:#b45309;">HOT</span>
             <div class="mini-ad-details">
-
                 <strong>📥 Turbo MP4 Video Converter</strong>
-
                 <span>1-Click Fast Save • No Limits</span>
-
             </div>
-
         </div>
-
-        <div class="mini-ad-action"
-             style="background: linear-gradient(135deg, #7c3aed, #6d28d9);">
-            Start Now
-        </div>
-
+        <div class="mini-ad-action" style="background: linear-gradient(135deg, #7c3aed, #6d28d9);">Start Now</div>
     </a>
 
-
-
-    <!-- =========================================================
-         MAIN DOWNLOADER CARD
-    ========================================================= -->
-
+    <!-- MAIN DOWNLOADER CARD -->
     <div class="box">
 
-
-        <div class="new-badge">
-            ⭐ NEW
-        </div>
-
+        <div class="new-badge">⭐ NEW</div>
 
         <h1>
             All-in-One<br>
             Video Downloader
         </h1>
 
-
         <p class="subtitle">
-
             Download videos from
-
             <span class="youtube">YouTube</span>,
-
             <span class="instagram">Instagram</span>,
-
             <span class="tiktok">TikTok</span>,
-
             <span class="facebook">Facebook</span>
-
             &amp; more —
-
             <span class="free">Free Online!</span>
-
         </p>
 
-
         <div class="platforms">
-
             <div class="platform-icon yt-icon">▶</div>
-
             <div class="platform-icon ig-icon">◎</div>
-
             <div class="platform-icon tt-icon">♪</div>
-
             <div class="platform-icon fb-icon">f</div>
-
             <div class="platform-icon plus-icon">＋</div>
-
         </div>
-
-
-        <!-- VIDEO URL INPUT (Clean & Safe) -->
 
         <input
             type="text"
@@ -1056,154 +582,68 @@
             autocomplete="off"
         >
 
-
-        <!-- QUALITY SELECTOR -->
-
         <select id="qualitySelect">
-
             <option value="720">High Definition (720p HD)</option>
-
             <option value="480">Standard Quality (480p)</option>
-
             <option value="360" selected>Fast / Data Saver (360p)</option>
-
             <option value="240">Low Quality (240p)</option>
-
         </select>
 
-
-        <!-- MAIN DOWNLOAD BUTTON -->
-
-        <button class="btn-main"
-                onclick="fetchVideo()">
-
+        <button class="btn-main" onclick="fetchVideo()">
             ⬇ Download Video
-
         </button>
 
-
-        <!-- YOUTUBE SPECIAL BUTTON (Cross-Promotion to Site 1) -->
-
-        <a href="https://yt-downloader-rt9h.onrender.com/"
-           class="btn-yt"
-           target="_blank">
-
+        <a href="https://yt-downloader-rt9h.onrender.com/" class="btn-yt" target="_blank">
             ▶ Download YouTube Video Here
-
         </a>
-
-
-        <!-- STATUS NOTIFICATION -->
 
         <div id="status"></div>
 
-
     </div>
 
-
-
-    <!-- =========================================================
-         BANNER AD 3 (BOTTOM) - MONETAG DIRECT LINK
-    ========================================================= -->
-
+    <!-- BANNER AD 3 (BOTTOM) -->
     <a href="javascript:void(0)"
        onclick="openDirectLinkAd()"
        class="mini-banner-ad">
-
         <div class="mini-ad-left">
-
-            <span class="mini-ad-tag"
-                  style="background:#ecfdf5; color:#047857;">
-                SAFE
-            </span>
-
+            <span class="mini-ad-tag" style="background:#ecfdf5; color:#047857;">SAFE</span>
             <div class="mini-ad-details">
-
                 <strong>🛡️ Secure Cloud Storage</strong>
-
                 <span>Save Unlimited Media Online</span>
-
             </div>
-
         </div>
-
-        <div class="mini-ad-action"
-             style="background: linear-gradient(135deg, #059669, #047857);">
-            Get Free
-        </div>
-
+        <div class="mini-ad-action" style="background: linear-gradient(135deg, #059669, #047857);">Get Free</div>
     </a>
 
-
-
-    <!-- =========================================================
-         BANNER AD 4 (BOTTOM) - MONETAG DIRECT LINK
-    ========================================================= -->
-
+    <!-- BANNER AD 4 (BOTTOM) -->
     <a href="javascript:void(0)"
        onclick="openDirectLinkAd()"
        class="mini-banner-ad">
-
         <div class="mini-ad-left">
-
-            <span class="mini-ad-tag"
-                  style="background:#fdf2f8; color:#be185d;">
-                PRO
-            </span>
-
+            <span class="mini-ad-tag" style="background:#fdf2f8; color:#be185d;">PRO</span>
             <div class="mini-ad-details">
-
                 <strong>🚀 HD Audio & Video Player</strong>
-
                 <span>Play All Formats Smoothly</span>
-
             </div>
-
         </div>
-
-        <div class="mini-ad-action"
-             style="background: linear-gradient(135deg, #db2777, #be185d);">
-            Download
-        </div>
-
+        <div class="mini-ad-action" style="background: linear-gradient(135deg, #db2777, #be185d);">Download</div>
     </a>
 
-
-
-    <!-- =========================================================
-         SEO ARTICLE SECTION (HELPS RANKING IN USA / UK)
-    ========================================================= -->
-
+    <!-- SEO ARTICLE SECTION -->
     <div class="seo-section">
-
         <h2>Free Unlimited Online Video Downloader (Safari &amp; Chrome)</h2>
-
         <p>
-
             Save Instagram Reels with original audio, download TikTok without watermark,
             and convert Facebook videos to 1080p MP4 directly on your iPhone Camera Roll,
             iPad, Mac, or Windows PC.
-
         </p>
-
     </div>
 
-
-
-    <!-- =========================================================
-         FOOTER
-    ========================================================= -->
-
     <footer>
-
         <p>&copy; 2026 All-in-One Downloader</p>
-
     </footer>
 
-
 </div>
-
-
 
 <!-- =========================================================
      MONETAG ADS LOGIC, TIMERS & DOWNLOAD SCRIPT
@@ -1214,152 +654,96 @@
     /* =====================================================
        1. MONETAG DIRECT LINK (Zone 11726573)
     ===================================================== */
-
     const MONETAG_DIRECT_LINK = "https://omg10.com/4/11726573";
 
-
     function openDirectLinkAd() {
-
         window.open(MONETAG_DIRECT_LINK, '_blank');
-
     }
-
-
 
     /* =====================================================
        2. AD TIMING RULES (COOLDOWNS)
     ===================================================== */
-
-    // Instant OnClick Ad: 2 Minute Cooldown (120,000 ms)
     const INSTANT_AD_INTERVAL = 2 * 60 * 1000; 
-
-
-    // Video Reward / Vignette Ad: 3 Minute Cooldown (180,000 ms)
     const VIDEO_REWARD_INTERVAL = 3 * 60 * 1000; 
-
-
 
     /* =====================================================
        3. INSTANT HIGH-EARNING ONCLICK SCRIPT (Zone 275857)
     ===================================================== */
-
     function triggerInstantAd(force = false) {
-
         const lastAd = localStorage.getItem('site2_instant_ad');
-
         const now = Date.now();
 
-
         if (force || !lastAd || (now - parseInt(lastAd, 10)) >= INSTANT_AD_INTERVAL) {
-
             if (!force) {
-
                 localStorage.setItem('site2_instant_ad', now);
-
             }
 
-
-            // Monetag Site 2 Zone 275857 Script Call
             const s = document.createElement('script');
-
             s.src = "https://quge5.com/88/tag.min.js";
-
             s.dataset.zone = "275857";
-
             s.async = true;
-
             s.setAttribute("data-cfasync", "false");
-
             document.body.appendChild(s);
-
         }
-
     }
-
-
 
     /* =====================================================
        4. VIDEO REWARD / VIGNETTE BANNER (Zone 11726569)
     ===================================================== */
-
     function triggerVideoRewardAd() {
-
         const lastVideoAd = localStorage.getItem('site2_reward_ad');
-
         const now = Date.now();
 
-
         if (!lastVideoAd || (now - parseInt(lastVideoAd, 10)) >= VIDEO_REWARD_INTERVAL) {
-
             localStorage.setItem('site2_reward_ad', now);
 
-
-            // Monetag Site 2 Zone 11726569 Vignette Banner Script
             (function(s){
-
                 s.dataset.zone = '11726569';
-
                 s.src = 'https://n6wxm.com/vignette.min.js';
-
             })([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')));
-
         }
-
     }
-
-
 
     /* =====================================================
        5. MAIN DOWNLOAD BUTTON EXECUTION
     ===================================================== */
-
     function fetchVideo() {
-
         const inputLink = document.getElementById('userInput').value.trim();
-
         const quality = document.getElementById('qualitySelect').value;
-
         const statusDiv = document.getElementById('status');
 
-
-        /* LINK VALIDATION */
-
         if (!inputLink || (!inputLink.includes("http://") && !inputLink.includes("https://"))) {
-
             statusDiv.innerHTML = "<div style='background:#fee2e2;color:#dc2626;padding:12px;border-radius:10px;'>Please enter a valid video link!</div>";
-
             return;
-
         }
-
 
         statusDiv.innerHTML = "<div style='background:#fef3c7;color:#d97706;padding:12px;border-radius:10px;'>Processing stream... ⏳</div>";
 
-
-        // 1st Download Instant Ad Trigger & 2-Min Rule
         triggerInstantAd();
-
-
-        // 3-Min Cooldown High-CPM Vignette Banner Call
         triggerVideoRewardAd();
 
-
-        /* BACKEND DOWNLOAD ENDPOINT */
-
         const backendUrl = `/download?url=${encodeURIComponent(inputLink)}&quality=${quality}`;
-
         window.location.href = backendUrl;
 
-
-        /* FEEDBACK MESSAGE */
-
         setTimeout(() => {
-
             statusDiv.innerHTML = "<div style='background:#d1fae5;color:#059669;padding:12px;border-radius:10px;'>✅ Download Starting. Check downloads!</div>";
-
         }, 5000);
-
     }
+
+    /* =====================================================
+       6. RENDER ANTI-SLEEP PING SYSTEM (24/7 AWAKE)
+    ===================================================== */
+    function keepRenderAlive() {
+        fetch('/ping')
+            .then(() => console.log('Render Server is Active ⚡'))
+            .catch(() => console.log('Ping dispatched.'));
+    }
+
+    // Site khulte hi wake-up trigger
+    keepRenderAlive();
+
+    // Har 12 minute baad auto-ping taaki Render ka server so na sake
+    setInterval(keepRenderAlive, 12 * 60 * 1000);
 
 </script>
 
