@@ -128,13 +128,13 @@
           rel="stylesheet">
 
     <!-- ==========================================
-         CSS STYLING
+         FLASHING & ANIMATED COLOR CSS STYLES
     ========================================== -->
 
     <style>
 
         /* =========================
-           RESET & BASIC SETUP
+           RESET & ANIMATED BG
         ========================= */
 
         * {
@@ -146,23 +146,16 @@
             margin: 0;
             min-height: 100vh;
             padding: 16px 14px 30px;
-            background:
-                radial-gradient(
-                    circle at 10% 10%,
-                    rgba(255, 0, 128, .08),
-                    transparent 25%
-                ),
-                radial-gradient(
-                    circle at 90% 20%,
-                    rgba(0, 140, 255, .10),
-                    transparent 28%
-                ),
-                linear-gradient(
-                    135deg,
-                    #f8fafc 0%,
-                    #e8eef8 100%
-                );
-            color: #18202f;
+            background: linear-gradient(-45deg, #ff007f, #7928ca, #0284c7, #10b981, #ff4500);
+            background-size: 400% 400%;
+            animation: flashingBG 10s ease infinite;
+            color: #182038;
+        }
+
+        @keyframes flashingBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
 
         .page {
@@ -181,10 +174,11 @@
         .mini-banner-ad {
             width: 100%;
             padding: 10px 14px;
-            border-radius: 12px;
-            background: #ffffff;
-            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
-            border: 1px solid #e2e8f0;
+            border-radius: 14px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(8px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+            border: 1px solid rgba(255, 255, 255, 0.8);
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -195,7 +189,7 @@
 
         .mini-banner-ad:hover {
             transform: translateY(-2px);
-            box-shadow: 0 5px 16px rgba(0, 0, 0, 0.09);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
         }
 
         .mini-ad-left {
@@ -234,38 +228,45 @@
             padding: 6px 12px;
             border-radius: 7px;
             white-space: nowrap;
+            box-shadow: 0 4px 10px rgba(37, 99, 235, 0.25);
+            animation: pulseGlow 1.5s infinite alternate;
         }
 
         /* =========================
-           MAIN CARD DESIGN
+           MAIN CARD DESIGN (FLASHING)
         ========================= */
 
         .box {
             position: relative;
             width: 100%;
-            background: rgba(255, 255, 255, .98);
+            background: rgba(255, 255, 255, .96);
+            backdrop-filter: blur(12px);
             padding: 34px 24px 28px;
-            border-radius: 26px;
-            box-shadow: 0 16px 45px rgba(30, 50, 80, .10);
+            border-radius: 28px;
+            box-shadow: 0 15px 45px rgba(0, 0, 0, .2);
             text-align: center;
-            border: 1px solid rgba(255, 255, 255, .9);
+            border: 2px solid transparent;
+            background-clip: padding-box;
             overflow: hidden;
+            animation: cardGlow 4s linear infinite alternate;
+        }
+
+        @keyframes cardGlow {
+            0% { box-shadow: 0 0 20px rgba(255, 0, 127, 0.6), 0 15px 45px rgba(0,0,0,.2); }
+            50% { box-shadow: 0 0 25px rgba(0, 191, 255, 0.7), 0 15px 45px rgba(0,0,0,.2); }
+            100% { box-shadow: 0 0 20px rgba(255, 215, 0, 0.7), 0 15px 45px rgba(0,0,0,.2); }
         }
 
         .box::before {
             content: "";
             position: absolute;
-            width: 180px;
-            height: 180px;
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
-            background:
-                linear-gradient(
-                    135deg,
-                    rgba(255,0,102,.10),
-                    rgba(0,120,255,.10)
-                );
-            top: -90px;
+            background: rgba(255, 0, 180, .15);
             right: -60px;
+            top: -60px;
+            animation: pulseOrbs 3s ease-in-out infinite alternate;
         }
 
         .box::after {
@@ -274,9 +275,15 @@
             width: 130px;
             height: 130px;
             border-radius: 50%;
-            background: rgba(0, 200, 150, .06);
-            bottom: -70px;
-            left: -50px;
+            background: rgba(0, 150, 255, .15);
+            left: -60px;
+            bottom: -60px;
+            animation: pulseOrbs 3s ease-in-out infinite alternate-reverse;
+        }
+
+        @keyframes pulseOrbs {
+            0% { transform: scale(1); opacity: 0.6; }
+            100% { transform: scale(1.3); opacity: 1; }
         }
 
         .new-badge {
@@ -284,19 +291,15 @@
             display: inline-flex;
             align-items: center;
             gap: 6px;
-            padding: 7px 16px;
-            border-radius: 12px;
+            padding: 8px 18px;
+            border-radius: 14px;
             color: #fff;
             font-size: 14px;
             font-weight: 800;
-            background:
-                linear-gradient(
-                    100deg,
-                    #ff9d00,
-                    #ff006e,
-                    #9c27ff
-                );
-            box-shadow: 0 6px 16px rgba(255, 0, 110, .22);
+            background: linear-gradient(90deg, #ff0055, #7928ca, #00d4ff, #ff0055);
+            background-size: 300% 300%;
+            animation: flashText 3s linear infinite;
+            box-shadow: 0 7px 18px rgba(160, 30, 200, .35);
             margin-bottom: 14px;
         }
 
@@ -307,33 +310,33 @@
             line-height: 1.05;
             font-weight: 800;
             letter-spacing: -1.5px;
-            background:
-                linear-gradient(
-                    90deg,
-                    #ff3d00,
-                    #ff006e 25%,
-                    #9c27ff 50%,
-                    #2455ff 75%,
-                    #00a878 100%
-                );
+            background: linear-gradient(90deg, #ed1111 0%, #ff006e 25%, #6c18ff 50%, #0075ff 75%, #ff0055 100%);
+            background-size: 200% auto;
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
+            animation: flashText 3s linear infinite;
+        }
+
+        @keyframes flashText {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
 
         .subtitle {
             position: relative;
-            color: #687386;
+            color: #4d5872;
             font-size: 15px;
             line-height: 1.6;
             margin: 0 auto 18px;
         }
 
-        .youtube { color: #ff1f1f; }
-        .instagram { color: #d6249f; }
-        .tiktok { color: #111827; }
-        .facebook { color: #1877f2; }
-        .free { color: #ff6900; }
+        .youtube { color: #f00020; font-weight: 700; }
+        .instagram { color: #d6249f; font-weight: 700; }
+        .tiktok { color: #111827; font-weight: 700; }
+        .facebook { color: #1677ff; font-weight: 700; }
+        .free { color: #08a650; font-weight: 700; }
 
         /* =========================
            PLATFORM ICONS
@@ -347,11 +350,11 @@
             gap: 12px;
             flex-wrap: wrap;
             margin: 0 auto 20px;
-            padding: 10px 14px;
-            border-radius: 18px;
+            padding: 12px 18px;
+            border-radius: 24px;
             background: #ffffff;
-            box-shadow: 0 6px 20px rgba(40, 60, 100, .08);
-            border: 1px solid #eef2f7;
+            box-shadow: 0 8px 25px rgba(30, 50, 100, .10);
+            border: 1px solid #edf0f7;
         }
 
         .platform-icon {
@@ -360,17 +363,23 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            border-radius: 12px;
+            border-radius: 14px;
             font-size: 20px;
             font-weight: 800;
             color: white;
+            box-shadow: 0 5px 12px rgba(0, 0, 0, .14);
+            transition: transform 0.2s;
+        }
+
+        .platform-icon:hover {
+            transform: scale(1.15) rotate(5deg);
         }
 
         .yt-icon { background: #ff0000; }
         .ig-icon { background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045); }
-        .tt-icon { background: #111; }
+        .tt-icon { background: #080808; }
         .fb-icon { background: #1877f2; }
-        .plus-icon { background: #f4f1ff; color: #6537d8; }
+        .plus-icon { background: #f0efff; color: #5534d8; box-shadow: none; border: 1px solid #ded9ff; }
 
         /* =========================
            INPUT FIELDS & SELECT
@@ -380,62 +389,71 @@
         select {
             position: relative;
             width: 100%;
-            padding: 16px 18px;
+            padding: 17px 18px;
             margin-bottom: 12px;
-            border: 2px solid #e4e9f0;
-            border-radius: 14px;
+            border: 2px solid #ff007f;
+            border-radius: 16px;
             font-size: 15px;
             outline: none;
             font-family: 'Poppins', sans-serif;
             background: #fff;
-            transition: .2s;
+            box-shadow: 0 0 15px rgba(255, 0, 127, 0.25);
+            transition: .3s;
+            animation: inputFlash 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes inputFlash {
+            0% { border-color: #ff007f; box-shadow: 0 0 12px rgba(255, 0, 127, 0.3); }
+            50% { border-color: #00d4ff; box-shadow: 0 0 15px rgba(0, 212, 255, 0.4); }
+            100% { border-color: #7928ca; box-shadow: 0 0 12px rgba(121, 40, 202, 0.3); }
         }
 
         input:focus,
         select:focus {
-            border-color: #8b5cf6;
-            box-shadow:
-                0 0 0 4px
-                rgba(
-                    139,
-                    92,
-                    246,
-                    .10
-                );
+            border-color: #7045ff;
+            box-shadow: 0 0 0 4px rgba(112, 69, 255, .25);
         }
 
         select {
             cursor: pointer;
-            background: #f7f9fc;
+            background: #f4f6ff;
+            animation: none;
+            border-color: #e0e5ef;
+            box-shadow: none;
         }
 
         /* =========================
-           BUTTONS
+           BUTTONS (FLASHING)
         ========================= */
 
         .btn-main {
             width: 100%;
-            padding: 16px 20px;
+            padding: 18px 20px;
             border: none;
-            border-radius: 14px;
+            border-radius: 16px;
             color: white;
-            font-size: 17px;
+            font-size: 18px;
             cursor: pointer;
-            font-weight: 700;
+            font-weight: 800;
             font-family: 'Poppins', sans-serif;
-            background:
-                linear-gradient(
-                    100deg,
-                    #ff6a00,
-                    #ff006e 45%,
-                    #405cff
-                );
-            box-shadow: 0 8px 20px rgba(255, 0, 110, .22);
+            background: linear-gradient(90deg, #ff003c, #e500a8, #7919ed, #096cff, #ff003c);
+            background-size: 300% 300%;
+            animation: flashText 3s linear infinite, pulseGlow 1.5s infinite alternate;
+            box-shadow: 0 10px 30px rgba(229, 0, 168, .4);
             transition: .2s;
         }
 
+        @keyframes pulseGlow {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.02); }
+        }
+
         .btn-main:hover {
-            transform: translateY(-2px);
+            transform: translateY(-2px) scale(1.02);
+        }
+
+        .btn-main:active {
+            transform: scale(.98);
         }
 
         .btn-yt {
@@ -452,12 +470,13 @@
             font-weight: 700;
             text-decoration: none;
             background: #ff0000;
-            box-shadow: 0 6px 18px rgba(255, 0, 0, .22);
+            box-shadow: 0 6px 18px rgba(255, 0, 0, .35);
             transition: .2s;
         }
 
         .btn-yt:hover {
             transform: translateY(-2px);
+            box-shadow: 0 8px 22px rgba(255, 0, 0, .5);
         }
 
         #status {
@@ -471,33 +490,38 @@
         ========================= */
 
         .seo-section {
-            background: #ffffff;
-            border-radius: 22px;
-            padding: 22px 18px;
-            box-shadow: 0 8px 25px rgba(40, 55, 100, .06);
-            border: 1px solid #eef2f7;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(8px);
+            border-radius: 26px;
+            padding: 25px 22px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
             text-align: left;
         }
 
         .seo-section h2 {
-            margin: 0 0 8px;
-            font-size: 18px;
-            font-weight: 800;
-            color: #1e293b;
+            margin: 0 0 10px;
+            font-size: 21px;
+            background: linear-gradient(90deg, #ff3000, #df008d, #5534ff);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            animation: flashText 4s linear infinite;
         }
 
         .seo-section p {
             margin: 0;
-            color: #64748b;
+            color: #5d687c;
             font-size: 13px;
-            line-height: 1.65;
+            line-height: 1.75;
         }
 
         footer {
-            color: #7b8798;
+            color: #ffffff;
             font-size: 12px;
             text-align: center;
             padding-top: 5px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.4);
         }
 
         /* =========================
@@ -506,7 +530,7 @@
 
         @media (max-width: 520px) {
             body { padding: 12px 10px 20px; }
-            .box { padding: 26px 16px 20px; border-radius: 20px; }
+            .box { padding: 29px 17px 25px; border-radius: 24px; }
             h1 { font-size: 34px; }
             .platform-icon { width: 40px; height: 40px; }
         }
