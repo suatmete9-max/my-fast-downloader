@@ -23,7 +23,7 @@ app.get('/download', async (req, res) => {
     // Aapki dono RapidAPI keys
     const apiKeys = [
         'a79029a42amsh34dd30872ea2f85p183dcbjsn3e284363d40b', // API Key 1
-        '74b0bf4963mshf95a9cf1f718e20p1f8a2djsn9bca7a6d74dd'  // API Key 2
+        '5790f8a63dmsh9d28171653380fep1aa04fjsne748a9af912c'  // API Key 2
     ];
 
     let downloadUrl = "";
